@@ -1510,6 +1510,12 @@ footer .top {
   }
 }
 
+@media screen and (max-width: 419px) and (min-width: 1px) {
+  html {
+      font-size: 3.81861vw;
+  }
+}
+
 /* //fontsize */
 
 
@@ -2460,4 +2466,16 @@ footer .top {
   footer .footer_i .footer_contents .f_nav {
     height: 22rem;
   }
+}
+
+@media screen and (max-width:419px) {
+  #event .event_inner .event_title {
+    padding: 0 1.5rem;
+}
+
+#event .event_inner .event_contents .slide_wrap .slide_inner .event_item .item_contents .title h3 {
+  height: 2.2rem;
+  /* margin-bottom: 0.6875rem; */
+}
+
 }
