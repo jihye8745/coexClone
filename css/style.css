@@ -63,7 +63,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#wrap {
+body {
   overflow: hidden;
 }
 
