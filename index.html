@@ -7,11 +7,18 @@
   <title>coex</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script src="./js/coex.js"></script>
 </head>
 
 <body>
   <!-- wrap -->
   <div id="wrap">
+    
+    <div class="mouse"></div>
     <!-- header -->
     <header>
       <div class="header_i">
@@ -106,6 +113,7 @@
               </a></li>
           </ul>
         </div>
+        <div class="bg_box"></div>
         <!-- //mobile_nav -->
       </div>
     </header>
@@ -125,34 +133,40 @@
             <p class="locate">코엑스 광장</p>
           </div>
           <div class="hero_arrow">
-            <figure>
+            <a href="$">
               <img src="./img/hero/hero_arrow.svg" alt="hero_arrow">
-            </figure>
+            </a>
           </div>
         </div>
         <!-- //text -->
         <!-- banner -->
         <div class="banner">
-          <div class="banner_top">
-            <div class="slide_wrap">
-              <div class="slide_inner">
-                <figure>
-                  <img src="./img/hero/hero_slide1.jpg" alt="s1">
-                </figure>
+          <div class="banner_top swiper">
+              <div class="slide_wrap swiper-wrapper">
+                <div class="slide_inner swiper-slide">
+                  <a href="#">
+                    <img src="./img/hero/hero_slide1.jpg" alt="s1">
+                  </a>
+                </div>
+                <div class="slide_inner swiper-slide">
+                  <a href="#">
+                    <img src="./img/hero/hero_slide2.png" alt="s2">
+                  </a>
+                </div>
+                <div class="slide_inner swiper-slide">
+                  <a href="#">
+                    <img src="./img/hero/hero_slide3.jpg" alt="s3">
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="slide_category">
+          </div>
+          <div class="slide_category">
               <span>POP-UP/EVENT</span>
               <figure>
                 <img src="./img/hero/hero_barcode.svg" alt="barcode">
               </figure>
             </div>
-          </div>
-          <div class="swiper-pagination">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <div class="hero_p swiper-pagination"></div>
         </div>
         <!-- //banner -->
       </div>
@@ -236,9 +250,9 @@
         <!-- //event_title -->
         <!-- event_contents -->
         <div class="event_contents">
-          <div class="slide_wrap">
-            <div class="slide_inner">
-              <div class="slide event_item">
+          <div class="swiper slide_wrap">
+            <div class="swiper-wrapper slide_inner">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event1.jpg" alt="e1"></figure>
@@ -254,7 +268,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event2.jpg" alt="e2"></figure>
@@ -270,7 +284,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event3.jpg" alt="e3"></figure>
@@ -286,7 +300,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event4.jpg" alt="e4"></figure>
@@ -302,7 +316,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event5.gif" alt="e5"></figure>
@@ -318,7 +332,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event6.jpg" alt="e6"></figure>
@@ -334,7 +348,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event7.jpg" alt="e7"></figure>
@@ -350,7 +364,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event8.jpg" alt="e8"></figure>
@@ -366,7 +380,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event9.jpg" alt="e9"></figure>
@@ -382,7 +396,7 @@
                   </div>
                 </a>
               </div>
-              <div class="slide event_item">
+              <div class="swiper-slide event_item">
                 <a href="#">
                   <div class="item_hover">
                     <figure><img src="./img/event/event10.jpg" alt="e10"></figure>
@@ -400,17 +414,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-pagination">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="event_p swiper-pagination">
           </div>
         </div>
         <!-- //event_contents -->
@@ -444,8 +448,8 @@
         <div class="news_contents">
           <div class="news_tab">
             <ul>
-              <li class="tab active">공지사항</li>
-              <li class="tab">입찰정보</li>
+              <li class="tab linotice active">공지사항</li>
+              <li class="tab liinfo">입찰정보</li>
               <li><a href="#">뉴스</a></li>
             </ul>
           </div>
